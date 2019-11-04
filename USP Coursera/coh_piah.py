@@ -1,9 +1,4 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
 
-"""
-José A. Tula
-"""
 import re
 
 def le_assinatura():

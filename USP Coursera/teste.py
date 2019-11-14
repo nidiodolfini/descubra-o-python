@@ -1,5 +1,4 @@
-carnes = ["picanha", "alcatra", "filé mignon", "cupim"]
-x = carnes
-del (x[-1])
-
-print(x)
+continue = 0
+ 
+if continue:
+    print("Continuar a execução do código")

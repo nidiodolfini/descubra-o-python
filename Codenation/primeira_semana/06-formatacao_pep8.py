@@ -5,7 +5,7 @@ import os
 
 a = []
 
-b = ('cdsichsdjaioujc dsacsdoaic saidojcsoadijc ssdaoicjsdaoii '
+b = ('cdsichsdjaioujc dsacsdoaic saidojcsoadijc ssdaoicjsdaoii   '
      'sojcosdijcoisadi saoidcj sodi')
 
 idade = 20
@@ -17,5 +17,6 @@ print(sys.argv)
 print(os.times())
 
 nome = 'Élysson MR'
+
 
 print(f'Nome: {nome}')

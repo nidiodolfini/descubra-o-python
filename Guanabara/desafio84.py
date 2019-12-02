@@ -1,19 +1,33 @@
-lista = []
+temp = []
 dados = []
+maior = menor = 0
 while True:
-    lista.append(str(input('digite o nome: ')))
-    lista.append(int(input('Digite o peso')))
-    dados.append(lista[:])
-    lista.clear()
+    temp.append(str(input('digite o nome: ')))
+    temp.append(int(input('Digite o peso: ')))
+    if len(dados) == 0:
+        maior = menor = temp[1]
+    else:
+        if temp[1] > maior:
+            maior = temp[1]    
+        if temp[1] < menor:
+            menor = temp[1]
 
-    resp = str(input( 'quer continuar'))
+    dados.append(temp[:])
+    temp.clear()
+
+
+    print('menor peso' , menor, ' maior peso' , maior)
+    resp = str(input('quer continuar: '))
     if resp in 'Nn':
         break
-
-listaPesados = list()
-for pos, valor in enumerate(lista):
-    if (pos == 0 or listaPesados[pos] <= lista[pos]):
-        print('entrou no IF')
-
-
-print(len(dados))
+print('os mais pesados são: ', end='')
+for p in dados:
+    if p[1] == maior:
+        print(f'[{p[0]}]', end='')
+print()
+print('os menores pesos foram: ', end='')
+for p in dados:
+    if p[1] == menor:
+        print(f'[{p[0]}]', end='')
+print()
+print(f' numeros de pessoas na lista {len(dados)}')

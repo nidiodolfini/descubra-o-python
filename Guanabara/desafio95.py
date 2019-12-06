@@ -3,6 +3,7 @@ jogadores = list()
 gols = list()
 
 while True:
+    jogador.clear()
     jogador['nome'] = str(input('Nome do Jogador: '))
     partidas = int(input(f'Quantas partidas {jogador["nome"]} jogou? '))
 
@@ -12,8 +13,12 @@ while True:
         jogador['total'] = sum(gols)
     jogadores.append(jogador.copy())
     gols.clear()
-    resp = str(input("Quer continuar:"))
-    if resp in "nN":
+    while True:
+        resp = str(input("Quer continuar:")).upper()[0]
+        if resp in 'SN':
+            break
+        print('Erro responda apenas S ou N.')
+    if resp in "N":
         break
 
 print('-='*30)
@@ -33,10 +38,3 @@ while resp != 999:
             print(f'No jogo {k} fez {i} gols')
     elif resp < 999:
         print("Digite um valor valido")
-
-
-# print(f'o jogador {jogador["nome"]} jogou {len(jogador["gols"])} partidas')
-# for i, v in enumerate(jogador['gols']):
-#     print(f'Na partirda {i+1}, fez {v} gols')
-# print('-='*30)
-# print(f'foi um total de {jogador["total"]} gols')

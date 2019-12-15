@@ -22,9 +22,13 @@ def contador(*num):
 contador(1, 2, 3)
 contador(1, 2, 3, 4, 5, 6, 7)
 
+
 def listaa(lst):
     print(lst)
+
 
 lsita = [0, 1, 2, 3, 4]
 
 listaa(lsita)
+
+help(input())

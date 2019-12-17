@@ -8,6 +8,7 @@ class Domestico:
         return True
 
 
+
 class Mamifero(Animal):
     pass
 

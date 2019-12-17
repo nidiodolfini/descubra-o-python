@@ -15,7 +15,7 @@ class Gato(Mamifero):
 
 class Rato(Mamifero):
     def emitir_som(self):
-        print("Algum som que o rato faz")
+        print("Algum som que o rato fazzzzz")
 
 
 cachorro = Cachorro()

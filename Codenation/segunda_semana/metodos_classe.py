@@ -5,7 +5,7 @@ class Impressora:
 
     @classmethod
     def imprimir_folha(cls):
-        print("folha impressa")
+        print("teste impressora")
 
     @classmethod
     def imprimir_livro(cls, paginas):

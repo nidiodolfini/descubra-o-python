@@ -20,3 +20,5 @@ Impressora.deu_problema_na_impressora()
 impressora = Impressora()
 
 impressora.imprimir()
+
+

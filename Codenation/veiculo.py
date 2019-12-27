@@ -18,7 +18,7 @@ class Veiculo:
 
 class Bicicleta(Veiculo):
     def __init__(self):
-        super().__init__()
+        Veiculo.__init__(self)
         self.cor = 'prata'
 
     def buzinar(self):

@@ -1,6 +1,14 @@
 from datetime import date, timedelta
 
 
+def QuantosDiasFaltamDuo(diasFeitos):
+    hoje = date.today()
+    ano = 365
+    diasFaltantes = ano - diasFeitos
+    delta = timedelta(days=diasFaltantes)
+    resultado = hoje + delta
+    print('Faltam:', diasFaltantes, 'dias, vai acabar no dia: ', resultado.strftime("%d/%m/%y"))
+
 def QuantosDiasFaltam(ano, mes, dia, quantosDias):
     hoje = date.today()
     dataProcurada = date(ano, mes, dia)
@@ -16,3 +24,5 @@ def QuantosDiasFaltam(ano, mes, dia, quantosDias):
 
 
 QuantosDiasFaltam(2019, 12, 2, 100)
+
+QuantosDiasFaltamDuo(333)

@@ -25,4 +25,4 @@ def QuantosDiasFaltam(ano, mes, dia, quantosDias):
 
 QuantosDiasFaltam(2019, 12, 2, 100)
 
-QuantosDiasFaltamDuo(333)
+QuantosDiasFaltamDuo(336)

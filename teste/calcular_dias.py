@@ -15,10 +15,10 @@ def QuantosDiasFaltam(ano, mes, dia, quantosDias):
     delta = timedelta(days=quantosDias)
     quandotermina = dataProcurada + delta
     quantosDiasParaTerminar = quandotermina - hoje
-
+    jaForam = delta - quantosDiasParaTerminar
     mensagemRetorno = "Faltam " + str(quantosDiasParaTerminar).replace("days, 0:00:00",
                                                                        "") + "dias para terminar, termina no dia " + quandotermina.strftime(
-        "%d/%m/%y")
+        "%d/%m/%y") + " Já foram " + str(jaForam).replace("days, 0:00:00", "" )
 
     print(mensagemRetorno)
 

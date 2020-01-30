@@ -9,6 +9,7 @@ def sockMerchant(n, ar):
     print(ar)
     while i<n:
         if ar[i]==ar[i+1]:
+            print(i, ar[i], "" , ar[i])
             count = count+1
             i+=2
         else:

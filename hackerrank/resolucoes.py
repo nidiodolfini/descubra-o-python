@@ -1,7 +1,3 @@
-ar = [1, 2, 3, 4, 10, 11]
-
-def simpleArraySum(ar):
-    print(sum(ar))
-
-
-simpleArraySum(ar)
+n = 5
+for i in range(n):
+    print(i**2)

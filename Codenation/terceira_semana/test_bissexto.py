@@ -27,9 +27,12 @@ def eh_bissexto(ano):
     resto400 = ano % 400
 
     if not resto:
+        print(resto)
         if not resto400:
+            print(resto400)
             return True
         elif resto100:
+            print(resto100)
             return True
 
     return False

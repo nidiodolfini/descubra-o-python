@@ -1,5 +1,14 @@
-def solve(meal_cost, tip_percent, tax_percent):
-    meal_cost += ((meal_cost * tip_percent) / 100) + ((meal_cost * tax_percent) / 100)
-    return round(meal_cost)
+def is_leap(year):
+    leap = False
+    resto = year % 4
+    resto100 = year % 100
+    resto400 = year % 400
 
-print(solve(12.0, 20, 8))
+    if not resto:
+        if not resto400:
+            leap = True
+        elif resto100:
+            leap =  True
+
+    return leap
+is_leap(2000)

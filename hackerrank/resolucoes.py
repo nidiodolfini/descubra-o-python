@@ -1,14 +1,11 @@
-def is_leap(year):
-    leap = False
-    resto = year % 4
-    resto100 = year % 100
-    resto400 = year % 400
+N = int(input())
 
-    if not resto:
-        if not resto400:
-            leap = True
-        elif resto100:
-            leap =  True
-
-    return leap
-is_leap(2000)
+if N % 2 != 0:
+    print('Weird')
+elif N % 2 == 0:
+    if 2 <= N < 5:
+        print('Not Weird')
+    elif 6 <= N <= 20:
+        print('Weird')
+    elif N > 20:
+        print('Not Weird')

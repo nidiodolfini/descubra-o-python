@@ -1,4 +1,4 @@
-def print_full_name(a, b):
-    print(f"Hello {a} {b}! You just delved into python.")
-
-print_full_name('Nidio', 'Dolfini')
+def solve(s):
+    texto = s
+    texto.split()
+solve('nidio dos santos dolfini')

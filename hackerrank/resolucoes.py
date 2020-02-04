@@ -1,7 +1,4 @@
-a = int(input())
-b = int(input())
-div1 = a // b
-div2 = a % b
-print(div1)
-print(div2)
-print(f'({div1}, {div2})')
+n = int(input())
+
+for i in range(1,11):
+    print(f'{n} x {i} = {n*i}')

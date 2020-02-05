@@ -1,4 +1,17 @@
-n = int(input())
+casesTests = int(input())
 
-for i in range(1,11):
-    print(f'{n} x {i} = {n*i}')
+
+def separapalavras(palavra):
+    evenIndexed = ''
+    oddIndexed = ''
+    for i in range(len(palavra)):
+        if i % 2 == 0:
+            evenIndexed += palavra[i]
+        else:
+            oddIndexed += palavra[i]
+    print(evenIndexed, oddIndexed)
+
+
+for i in range(casesTests):
+    s = input()
+    separapalavras(s)

@@ -1,17 +1,6 @@
-casesTests = int(input())
+n = int(input())
 
+arr = list(map(int, input().rstrip().split()))
 
-def separapalavras(palavra):
-    evenIndexed = ''
-    oddIndexed = ''
-    for i in range(len(palavra)):
-        if i % 2 == 0:
-            evenIndexed += palavra[i]
-        else:
-            oddIndexed += palavra[i]
-    print(evenIndexed, oddIndexed)
-
-
-for i in range(casesTests):
-    s = input()
-    separapalavras(s)
+for i in range(n, 0, -1):
+    print(arr[i-1])

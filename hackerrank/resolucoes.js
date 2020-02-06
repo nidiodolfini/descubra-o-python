@@ -1,13 +1,7 @@
-function fatorial(n) {
-    var fat = 0
-    if (n > 1) {
-        for (i = 0; i < n; i++){
-            fat += fat * n 
-        }
-        return fat;
-    }
-    return 1;
+const PI = Math.PI;
+let r = +(readLine());
+var area = pi * (r**2);
+console.log(area)
+var perimeter = 2 * pi * r;
+console.log(perimeter)
 
-}
-
-console.log(fatorial(4))

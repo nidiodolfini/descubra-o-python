@@ -1,21 +1,13 @@
-function getGrade(score) {
-    let grade;
-    
-    if (score > 25 && score <= 30 ){
-        grade = "A";
-    }else if (score > 20 && score <= 25){
-        grade = "B";
-    }else if (score > 15 && score <= 25){
-        grade = "C";
-    }else if (score > 10 && score <= 15){
-        grade = "D";
-    }else if (score > 5 && score <= 10){
-        grade = "E"
-    }else{
-        grade = "F"
+function getLetter(s) {
+    let letter;
+    console.log(s.substring(1,-20))
+    switch (s.substring(1,-20)){
+        case "a": 
+        letter = "A"
+        return letter;
     }
     
-    return grade;
+    return letter;
 }
 
-console.log(getGrade(17))
+console.log(getLetter('adfgt'))

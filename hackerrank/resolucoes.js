@@ -51,3 +51,4 @@ function vowelsAndConsonants(s) {
         console.log(letter);
     }
 }
+vowelsAndConsonants('nidio')

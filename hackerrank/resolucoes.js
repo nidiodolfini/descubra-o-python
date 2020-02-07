@@ -1,13 +1,14 @@
 function getLetter(s) {
     let letter;
-    console.log(s.substring(1,-20))
-    switch (s.substring(1,-20)){
-        case "a": 
-        letter = "A"
-        return letter;
+    switch (true){
+        case 'aeiou'.includes(s[0]): return letter = "A";
+        case "bcdfg".includes(s[0]): return letter = "B";
+        case "hjklm".includes(s[0]): return letter = "C";
+        default: return letter = 'D';
     }
     
     return letter;
 }
-
-console.log(getLetter('adfgt'))
+let s = 'adfgt'
+console.log(getLetter('knidio'));
+console.log(getLetter(s));

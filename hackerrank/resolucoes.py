@@ -15,8 +15,8 @@ for i in range(0,n):
         print(f'{contatos[i]["name"]}={contatos[i]["phone"]}')
     else:
         print('Not found')
-import sys
 
+import sys
 # Read input and assemble Phone Book
 n = int(input())
 phoneBook = {}

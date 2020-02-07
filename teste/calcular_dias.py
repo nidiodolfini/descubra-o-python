@@ -7,7 +7,7 @@ def QuantosDiasFaltamDuo(diasFeitos):
     diasFaltantes = ano - diasFeitos
     delta = timedelta(days=diasFaltantes)
     resultado = hoje + delta
-    print('Faltam:', diasFaltantes, 'dias, vai acabar no dia: ', resultado.strftime("%d/%m/%y"))
+    print('Faltam:', diasFaltantes, 'dias, vai acabar no dia:', resultado.strftime("%d/%m/%y"))
 
 def QuantosDiasFaltam(ano, mes, dia, quantosDias):
     hoje = date.today()
@@ -25,4 +25,4 @@ def QuantosDiasFaltam(ano, mes, dia, quantosDias):
 
 QuantosDiasFaltam(2019, 12, 2, 100)
 
-QuantosDiasFaltamDuo(345)
+QuantosDiasFaltamDuo(356)

@@ -1,14 +1,19 @@
-function getLetter(s) {
-    let letter;
-    switch (true){
-        case 'aeiou'.includes(s[0]): return letter = "A";
-        case "bcdfg".includes(s[0]): return letter = "B";
-        case "hjklm".includes(s[0]): return letter = "C";
-        default: return letter = 'D';
+function vowelsAndConsonants(s) {
+    var vogais = '';
+    var consoantes = '';
+  for (var i = 0; i < s.length; i++){
+    if('aeiou'.includes(s[i])){
+        vogais += s[i]
+    }else {
+        consoantes += s[i]
     }
     
-    return letter;
+  }
+  var teste = vogais;
+  teste += consoantes;
+  for (i = 0; i < teste.length; i++){
+    console.log(teste[i])
+  }
 }
-let s = 'adfgt'
-console.log(getLetter('knidio'));
-console.log(getLetter(s));
+
+vowelsAndConsonants('javascriptloops')

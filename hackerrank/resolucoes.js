@@ -9,8 +9,7 @@ function getSecondLargest(nums) {
             largest = nums[i];
             continue;
         }
-        console.log("s",secondLargest)
-        console.log('l',largest)
+
         if ((nums[i] > secondLargest) && (nums[i] < largest)) {
             secondLargest = nums[i];
         }

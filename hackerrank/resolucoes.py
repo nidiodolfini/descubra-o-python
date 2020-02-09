@@ -1,7 +1,9 @@
-def fatorial(n):
-    if n == 0 or n == 1:
-        return 1
-    else:
-        return n * fatorial(n - 1)
+from itertools import groupby
 
-print(fatorial(5))
+
+def converter(n):
+    print(max([len(list(g)) for k, g in groupby(bin(n))]))
+    # return bin(n)[2:]
+
+
+converter(13)

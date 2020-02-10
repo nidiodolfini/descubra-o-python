@@ -1,21 +1,23 @@
-function Rectangle(a, b) {
-//    var length = a;
-//    var width = b;
-//    var perimeter = 2 * (length + width);
-//    var area = length * width;
-//    console.log(length);
-//    console.log(width);
-//    console.log(perimeter);
-//   console.log(area);
-
-    var rectangle = {
-        length: a,
-        width: b,
-        perimeter: 2 * (a + b),
-        area: a * b
-    }
-    return rectangle;
-
+/*
+ * Return a count of the total number of objects 'o' satisfying o.x == o.y.
+ * 
+ * Parameter(s):
+ * objects: an array of objects with integer properties 'x' and 'y'
+ */
+function getCount(objects) {
+    return objects.filter(obj => obj.x == obj.y).length;
 }
 
-console.log(Rectangle(4, 5))
+
+function main() {
+    const n = +(readLine());
+    let objects = [];
+    
+    for (let i = 0; i < n; i++) {
+        const [a, b] = readLine().split(' ');
+        
+        objects.push({x: +(a), y: +(b)});
+    }
+    
+    console.log(getCount(objects));
+}

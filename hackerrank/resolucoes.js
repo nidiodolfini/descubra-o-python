@@ -1,23 +1,21 @@
-function reverseString(s) {
-    try {
-        var splitString = s.split(''); //divide a palavra em um array letras 
-        var reverseArray = splitString.reverse(); //inverter o array 
-        var joinArray = reverseArray.join(''); // junta o array de palavras
-        return joinArray;
-    }
-    catch (e) {
-        console.log("s.split is not a function");
-        console.log(s)
-    }
+function isPositive(a) {
+    for (i = 0; i < a; i++){
         
-    
+        try{
+        if (a<0){
+            throw "Negative Error"
+        } else
+            if (a == 0){
+                throw "Zero Error";
+            } else {
+                return "YES"
+            } 
+            
+        }  catch(err){
+            return err;
+        }  
+        
+    }
 }
 
-reverseString(Number(1234));
-console.log(reverseString('1234'));
-
-
-function reverseString(str) {
-    return str.split("").reverse().join("");
-}
-reverseString("hello");
+console.log(isPositive(-1))

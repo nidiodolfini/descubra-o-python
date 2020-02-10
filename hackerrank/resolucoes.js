@@ -1,23 +1,11 @@
 /*
- * Return a count of the total number of objects 'o' satisfying o.x == o.y.
- * 
- * Parameter(s):
- * objects: an array of objects with integer properties 'x' and 'y'
+ * Implement a Polygon class with the following properties:
+ * 1. A constructor that takes an array of integer side lengths.
+ * 2. A 'perimeter' method that returns the sum of the Polygon's side lengths.
  */
-function getCount(objects) {
-    return objects.filter(obj => obj.x == obj.y).length;
-}
 
-
-function main() {
-    const n = +(readLine());
-    let objects = [];
-    
-    for (let i = 0; i < n; i++) {
-        const [a, b] = readLine().split(' ');
-        
-        objects.push({x: +(a), y: +(b)});
-    }
-    
-    console.log(getCount(objects));
-}
+ class Polygon {
+     constructor(sides){
+        this.sides = sides;
+     }
+ }

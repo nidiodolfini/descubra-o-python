@@ -38,9 +38,9 @@ class MyBook(Book):
         self.price = price
 
     def display(self):
-        print("Title: " + title)
-        print("Author: " + author)
-        print("Price: " + str(price))
+        print(f"Title: {title}")
+        print(f"Author: {author}")
+        print(f"Price: {price}")
 
 
 title = input()

@@ -1,50 +1,21 @@
-# Declare your class here.
-#     /**
-#     *   Class Constructor
-#     *
-#     *   @param title The book's title.
-#     *   @param author The book's author.
-#     *   @param price The book's price.
-#     **/
-#     // Write your constructor here
-#
-#     /**
-#     *   Method Name: display
-#     *
-#     *   Print the title, author, and price in the specified format.
-#     **/
-#     // Write your method here
-#
-# End class
+class Difference:
+    def __init__(self, a):
+        self.__elements = a
+        self.maximumDifference = self.computeDifference()
 
-from abc import ABCMeta, abstractmethod
+	# Add your code here
+
+    def computeDifference(self):
+        self.__elements.sort()
+        return self.__elements[-1] - self.__elements[0]
 
 
-class Book(object, metaclass=ABCMeta):
-    def __init__(self, title, author):
-        self.title = title
-        self.author = author
+# End of Difference class
 
-    @abstractmethod
-    def display(self): pass
+_ = input()
+a = [int(e) for e in input().split(' ')]
 
+d = Difference(a)
+d.computeDifference()
 
-# Write MyBook class
-class MyBook(Book):
-    price = 0
-
-    def __init__(self, title, author, price):
-        super(Book, self).__init__()
-        self.price = price
-
-    def display(self):
-        print(f"Title: {title}")
-        print(f"Author: {author}")
-        print(f"Price: {price}")
-
-
-title = input()
-author = input()
-price = int(input())
-new_novel = MyBook(title, author, price)
-new_novel.display()
+print(d.maximumDifference)

@@ -1,3 +1,10 @@
-n = 6
-for i in range(1, n + 1):
-        print(str('#'*i).rjust(n)) #rjust joga tudo para a direita baseado na posição do n
+def miniMaxSum(arr):
+    total = sum(arr)
+    totalDiminuido = []
+    for i in arr:
+        totalDiminuido.append(total - i)
+    print(f'{min(totalDiminuido)} {max(totalDiminuido)}')
+
+arr = list(map(int, input().rstrip().split()))
+
+miniMaxSum(arr)

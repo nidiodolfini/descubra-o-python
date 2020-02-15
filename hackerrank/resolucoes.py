@@ -1,10 +1,11 @@
-def miniMaxSum(arr):
-    total = sum(arr)
-    totalDiminuido = []
-    for i in arr:
-        totalDiminuido.append(total - i)
-    print(f'{min(totalDiminuido)} {max(totalDiminuido)}')
+def swap_case(s):
+    a = ''
+    for let in s:
+        if let.isupper():
+            a += let.lower()
+        else:
+            a += let.upper()
+    return a
 
-arr = list(map(int, input().rstrip().split()))
 
-miniMaxSum(arr)
+print(swap_case('HackerRank.com presents "Pythonist 2".'))

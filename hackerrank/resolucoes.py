@@ -1,28 +1,16 @@
-# def jumpingOnClouds(c):
-#     jumps = 0
-#     for i in range(n):
-#         if c[i] == 0:
-#             jumps += 1
-#
-#     return jumps - 1
+class Calculator():
+    def power(self, n, p):
+        if p < 0 or n < 0:
+            raise Exception('n and p should be non-negative')
+        return n ** p
 
 
-def jumpingOnClouds(c):
-    count=0
-    jump=0
-    for i in c:
-        if i==0:
-            count+=1
-        else:
-            jump=jump+count//2+1
-            count=0
-    if count>1:
-        jump=jump+count//2
-    return jump
-
-n = int(input())
-
-c = list(map(int, input().rstrip().split()))
-result = jumpingOnClouds(c)
-
-print(result)
+myCalculator = Calculator()
+T = int(input())
+for i in range(T):
+    n, p = map(int, input().split())
+    try:
+        ans = myCalculator.power(n, p)
+        print(ans)
+    except Exception as e:
+        print(e)

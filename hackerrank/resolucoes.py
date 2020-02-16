@@ -1,16 +1,19 @@
-class Calculator():
-    def power(self, n, p):
-        if p < 0 or n < 0:
-            raise Exception('n and p should be non-negative')
-        return n ** p
+def utopianTree(n):
+    # tree = 1
+    # for i in range(n+1):
+    #     if n == 0:
+    #         break
+    #     elif i % 2 == 0 and i > 1:
+    #         tree += 1
+    #     elif (i % 3 == 0 and n >= 1) or (i % 5 == 0):
+    #         tree = tree * 2
+    # return tree
+    res = 1
+    for i in range(n):
+        res = res * 2 if i % 2 == 0 else res + 1
+    return res
 
-
-myCalculator = Calculator()
-T = int(input())
-for i in range(T):
-    n, p = map(int, input().split())
-    try:
-        ans = myCalculator.power(n, p)
-        print(ans)
-    except Exception as e:
-        print(e)
+print(utopianTree(9))
+print(utopianTree(7))
+print(utopianTree(10))
+print(utopianTree(8))

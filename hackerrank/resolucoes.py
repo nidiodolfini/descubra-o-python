@@ -1,20 +1,15 @@
-class AdvancedArithmetic(object):
-    def divisorSum(n):
-        raise NotImplementedError
+n = int(input().strip())
+a = list(map(int, input().strip().split(' ')))
+# Write Your Code Here
 
-class Calculator(AdvancedArithmetic):
-    def divisorSum(self, n):
-        x = []
-        for i in range(1, n+1):
-            if n % i == 0:
-                x.append(i)
-        else:
-            pass
-        return sum(x)
-
-
-n = int(input())
-my_calculator = Calculator()
-s = my_calculator.divisorSum(n)
-print("I implemented: " + type(my_calculator).__bases__[0].__name__)
-print(s)
+numSwaps = 0
+for i in range(len(a)-1,0,-1):
+    for j in range(i):
+        if a[j] > a[j+1]:
+            temp = a[j]
+            a[j] = a[j+1]
+            a[j+1] = temp
+            numSwaps += 1
+print('Array sorted in',numSwaps,'swaps')
+print('First Element:',a[0])
+print('Last Element:',a[-1])

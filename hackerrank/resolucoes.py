@@ -14,11 +14,11 @@
 # print('First Element:',a[0])
 # print('Last Element:',a[-1])
 #
+a = "Tuesday"
+b = 10
+a = b
+b = a
+a = 10.0
 
-print('The word "Ciao" means "hello" in Italian.')
 
-print("hello")
-print("")
-print()
-
-print("bye")
+print(type(10/0))

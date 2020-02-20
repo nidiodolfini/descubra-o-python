@@ -1,9 +1,6 @@
-def camelcase(s):
-    contWord = 1
-    for i in s:
-        if i.isupper():
-            contWord += 1
-    print(contWord)
-
-
-camelcase('saveChangesInTheEditor')
+a = int(input())
+b = int(input())
+c = int(input())
+print(4 * (a + b + c))
+print(2 * ((a * b) + (b * c) + (a * c)))
+print(a * b * c)

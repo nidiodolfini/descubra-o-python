@@ -1,12 +1,17 @@
-variable = input()
-print(variable.lower().replace("!","").replace(",","").replace("?","").replace(".","").strip())
+amount_of_coffee = int(input("Write how many cups of coffee you will need: "))
+print(f'For {amount_of_coffee} cups of coffee you will need:')
+print(f'{amount_of_coffee * 200} ml of water')
+print(f'{amount_of_coffee * 50} ml of milk')
+print(f'{amount_of_coffee * 15} g of coffee beans')
 
 
 
 
-
-
-
+# Write how many cups of coffee you will need: > 25
+# For 25 cups of coffee you will need:
+# 5000 ml of water
+# 1250 ml of milk
+# 375 g of coffee beans
 
 
 

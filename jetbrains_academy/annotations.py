@@ -1,22 +1,5 @@
-amount = 1000
-interest_rate = 5
-years = 1
-
-income = ((amount * interest_rate) / 100) * years
-
-print(income)
-
-
-
-
-
-
-
-
-
-
-
-
+variable = input()
+print(variable.lower().replace("!","").replace(",","").replace("?","").replace(".","").strip())
 
 
 

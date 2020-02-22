@@ -23,6 +23,6 @@ def QuantosDiasFaltam(ano, mes, dia, quantosDias):
     print(mensagemRetorno)
 
 
-QuantosDiasFaltam(2019, 12, 2, 100)
+QuantosDiasFaltam(2020, 2, 10,100)
 
 QuantosDiasFaltamDuo(365)

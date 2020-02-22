@@ -8,22 +8,22 @@ if chicken <= money < goat:
     print(f'{round(money / chicken - 0.5)} chickens' if round(money / chicken - 0.5) > 1 else '1 chicken')
 elif goat <= money < pig:
     print(f'{round(money / goat - 0.5)} goats' if round(money / goat - 0.5) > 1 else '1 goat')
-    print(f'{round(money / chicken - 0.5)} chickens' if round(money / chicken - 0.5) > 1 else '1 chicken')
+    # print(f'{round(money / chicken - 0.5)} chickens' if round(money / chicken - 0.5) > 1 else '1 chicken')
 elif pig <= money < cow:
     print(f'{round(money / pig - 0.5)} pigs' if round(money / pig - 0.5) > 1 else '1 pig')
-    print(f'{round(money / goat - 0.5)} goats' if round(money / goat - 0.5) > 1 else '1 goat')
-    print(f'{round(money / chicken - 0.5)} chickens' if round(money / chicken - 0.5) > 1 else '1 chicken')
+    # print(f'{round(money / goat - 0.5)} goats' if round(money / goat - 0.5) > 1 else '1 goat')
+    # print(f'{round(money / chicken - 0.5)} chickens' if round(money / chicken - 0.5) > 1 else '1 chicken')
 elif cow <= money < sheep:
     print(f'{round(money / cow - 0.5)} cows' if round(money / cow - 0.5) > 1 else '1 cow')
-    print(f'{round(money / pig - 0.5)} pigs' if round(money / pig - 0.5) > 1 else '1 pig')
-    print(f'{round(money / goat - 0.5)} goats' if round(money / goat - 0.5) > 1 else '1 goat')
-    print(f'{round(money / chicken - 0.5)} chickens' if round(money / chicken - 0.5) > 1 else '1 chicken')
+    # print(f'{round(money / pig - 0.5)} pigs' if round(money / pig - 0.5) > 1 else '1 pig')
+    # print(f'{round(money / goat - 0.5)} goats' if round(money / goat - 0.5) > 1 else '1 goat')
+    # print(f'{round(money / chicken - 0.5)} chickens' if round(money / chicken - 0.5) > 1 else '1 chicken')
 elif money >= sheep:
     print(f'{round(money / sheep - 0.5)} sheep' if round(money / cow - 0.5) > 1 else '1 sheep')
-    print(f'{round(money / cow - 0.5)} cows' if round(money / cow - 0.5) > 1 else '1 cow')
-    print(f'{round(money / pig - 0.5)} pigs' if round(money / pig - 0.5) > 1 else '1 pig')
-    print(f'{round(money / goat - 0.5)} goats' if round(money / goat - 0.5) > 1 else '1 goat')
-    print(f'{round(money / chicken - 0.5)} chickens' if round(money / chicken - 0.5) > 1 else '1 chicken')
+    # print(f'{round(money / cow - 0.5)} cows' if round(money / cow - 0.5) > 1 else '1 cow')
+    # print(f'{round(money / pig - 0.5)} pigs' if round(money / pig - 0.5) > 1 else '1 pig')
+    # print(f'{round(money / goat - 0.5)} goats' if round(money / goat - 0.5) > 1 else '1 goat')
+    # print(f'{round(money / chicken - 0.5)} chickens' if round(money / chicken - 0.5) > 1 else '1 chicken')
 
 else:
     print('None')

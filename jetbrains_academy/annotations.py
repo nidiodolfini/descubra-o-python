@@ -1,23 +1,164 @@
-
-# problem of day 23/02/20 Ticket
-# Save the input in this variable
-ticket = input()
-# Add up the digits for each half
-half1 = 0
-half2 = 0
-cont = 0
-for i in ticket:
-    if cont <= 2:
-        half1 += int(i)
-    else:
-        half2 += int(i)
-    cont += 1
-
-# Thanks to you, this code will work
-if half1 == half2:
-    print("Lucky")
+x = float(input())
+y = float(input())
+if x < 0 and y < 0:
+    print('III')
+elif y < 0 and x > 0:
+    print('IV')
+elif x < 0 and y > 0:
+    print('II')
+elif x > 0 and y > 0:
+    print('I')
 else:
-    print("Ordinary")
+    print('(0, 0)')
+
+
+
+# word = input() #taking a string from user & storing into variable.
+# li = list(word) #converting the string into list & storing into variable.
+# ln = len(li) #storing the length of the list into a variable.
+# revStr = "" #defining an empty variable (which will be updated & will be final result to check palindrome).
+# i = ln - 1 #value of i will be used in loop.
+#
+# while i >= 0: #here logic is to start from right to left from the list named "li". That means going from last to first index of the list till the index value is "0" of the "li" list.
+#     revStr = revStr + li[i] #concatenating & updating the "revStr" defined variable.
+#     i = i - 1 #decreasing the value of i to reach from the last index to first index.
+# word = word.lower() #converting value into lowercase string.
+# revStr = revStr.lower() #converting the final output into lowercase string to avoid case sensitive issue.
+#
+# if word == revStr: #the two string is same or not?
+#     print('Palindrome') #if same.
+# else:
+#     print('Not palindrome') #if not same.
+
+# word = input()
+# li = list(word)
+# ln = len(li)
+# revStr = ""
+# i = ln - 1
+#
+# while i >= 0:
+#     revStr = revStr + li[i]
+#     i = i - 1
+# word = word.lower()
+# revStr = revStr.lower()
+#
+# if word == revStr:
+#     print('Palindrome')
+# else:
+#     print('Not palindrome')
+
+
+# import random                      # 1
+#                                    # 2
+# n_guesses = 0                      # 3
+# while n_guesses < 5:               # 4
+#     number = random.randint(1, 5)  # 5
+#     guess = int(input())           # 6
+#     if guess == number:            # 7
+#         print('Yes!')              # 8
+#     else:                          # 9
+#         print('No!')               # 10
+#     n_guesses += 1                 # 11
+
+
+# i = 0
+# s = 0
+# while i < 10:
+#     i = i + 1
+#     s = s + i
+#     if s > 15:
+#         break
+#     i = i + 1
+# print(i)
+
+# pancakes = 2
+# while pancakes > 0:
+#     print("I'm the happiest human being in the world!")
+#     pancakes -= 1
+#     if pancakes == 0:
+#         print("Now I have no pancakes!")
+#         # break
+# else:
+#     print("No pancakes...")
+
+# string = "red yellow fox bite orange goose beeeeeeeeeeep"
+# vowels = 'aeiouy'
+# count = 0
+#
+# # fix this for loop
+# for i, v in enumerate(string):
+#     if string[i] in vowels:
+#         count += 1
+# print(count)
+
+# a = int(input())
+# b = int(input())
+# total = 0
+# soma = 0
+# for i in range(a, b+1):
+#     if i % 3 == 0:
+#         soma += i
+#         total += 1
+# print(soma/total)
+
+
+# numero = int(input())
+#
+# for i in range(100):
+#     if i % 3 == 0 and i % 5 == 0:
+#         print("FizzBuzz")
+#     elif i % 3 == 0:
+#         print("Fizz")
+#     elif i % 5 == 0:
+#         print('Buzz')
+#     else:
+#         print(i)
+
+# for i in range (1,12,3):
+#     print(i)
+
+# for i in range(0,5):
+#     print(i)
+
+# i = 1
+# while i <= 20:
+#     print(i * i)
+#     i += 1
+# n = int(input())
+# f = 1
+# while f <= n:
+#     print(f*f)
+#     f +=1
+
+# hours = int(input())
+# if hours <= 2:
+#     print('That seems reasonable')
+# elif hours <= 4:
+#     print('Do you have time for anything else?')
+# else:
+#     print('You need to get outside more!')
+
+
+#
+# # problem of day 23/02/20 Ticket
+# # Save the input in this variable
+# ticket = input()
+# # Add up the digits for each half
+# half1 = 0
+# half2 = 0
+# cont = 0
+# for i in ticket:
+#     if cont <= 2:
+#         half1 += int(i)
+#     else:
+#         half2 += int(i)
+#     cont += 1
+#
+# # Thanks to you, this code will work
+# if half1 == half2:
+#     print("Lucky")
+# else:
+#     print("Ordinary")
 
 
 # from math import floor

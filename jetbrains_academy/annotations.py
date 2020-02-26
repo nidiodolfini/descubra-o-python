@@ -11,9 +11,9 @@ class Demon:
 
 
 find = input()
-if find in getattr(Angel, 'home') or getattr(Angel, 'feature') or getattr(Angel, 'color'):
+if find in getattr(Angel, 'home') or find in getattr(Angel, 'feature') or find in getattr(Angel, 'color'):
     print('Angel')
-elif find in getattr(Demon, 'home') or getattr(Demon, 'feature') or getattr(Demon, 'color'):
+elif find in getattr(Demon, 'home') or find in getattr(Demon, 'color') or find in getattr(Demon, 'feature'):
     print('Demon')
 # class RockBand:
 #     genre = 'Rock'

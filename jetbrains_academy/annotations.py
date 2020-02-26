@@ -1,16 +1,95 @@
-x = float(input())
-y = float(input())
-if x < 0 and y < 0:
-    print('III')
-elif y < 0 and x > 0:
-    print('IV')
-elif x < 0 and y > 0:
-    print('II')
-elif x > 0 and y > 0:
-    print('I')
-else:
-    print('(0, 0)')
+class Angel:
+    color = "white"
+    feature = "wings"
+    home = "Heaven"
 
+
+class Demon:
+    color = "red"
+    feature = "horns"
+    home = "Hell"
+
+
+find = input()
+if find in getattr(Angel, 'home') or getattr(Angel, 'feature') or getattr(Angel, 'color'):
+    print('Angel')
+elif find in getattr(Demon, 'home') or getattr(Demon, 'feature') or getattr(Demon, 'color'):
+    print('Demon')
+# class RockBand:
+#     genre = 'Rock'
+#     n_members = 4
+#     famous_songs = []
+#
+#
+# kiss = RockBand()
+# print(kiss.genre)
+# print(kiss.n_members)
+# print(kiss.famous_songs)
+
+# # Book class
+# class Book:
+#     material = "paper"
+#     cover = "paperback"
+#     all_books = []
+#
+# my_book = Book()
+#
+# print(my_book.cover)
+
+
+# income = int(input())
+# percent = 1
+# calculated_tax = 0
+# if income <= 15527:
+#     percent = 0
+#     calculated_tax = 0
+# elif income <= 42707:
+#     percent = 15
+#     calculated_tax = (income * 15) / 100
+# elif income <= 85414:
+#     percent = 22
+#     calculated_tax = (income * 22) / 100
+# elif income <= 132406:
+#     percent = 26
+#     calculated_tax = (income * 26) / 100
+# else:
+#     percent = 28
+#     calculated_tax = (income * 28) / 100
+#
+# print(f"The tax for {income} is {percent}%. That is {calculated_tax:.2f} dollars!")
+
+# string1 = "someone"
+# string2 = "string"
+# # add the correct string instead of the dots
+# print(string1 + "'s " + string2)
+#
+# # # i = 1
+# n = (f''''
+# '"'
+# '"'"'
+# '"'"'"'
+# ''')
+# print(n)
+
+# n = 829
+# soma = 0
+# t = list(str(n))
+# for i in t:
+#     soma += int(i)
+# print(soma)
+# # x = float(input())
+# y = float(input())
+# if x < 0 and y < 0:
+#     print('III')
+# elif y < 0 and x > 0:
+#     print('IV')
+# elif x < 0 and y > 0:
+#     print('II')
+# elif x > 0 and y > 0:
+#     print('I')
+# else:
+#     print('(0, 0)')
+#
 
 
 # word = input() #taking a string from user & storing into variable.

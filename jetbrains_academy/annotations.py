@@ -1,23 +1,96 @@
-class PiggyBank:
-    # create __init__ and add_money
-    def __init__(self, dollars, cents):
-        self.dollar = dollars
-        self.cents = cents
+class MyClass:
+    n_objects = 0
 
-    def add_money(self, deposit_dollars, deposit_cents):
-        self.dollar += deposit_dollars
-        if self.cents + deposit_cents > 99:
-            self.dollar += (self.cents + deposit_cents) // 100
-            soma = (self.cents + deposit_cents) % 100
-            self.cents = soma
-        else:
-            self.cents += deposit_cents
-        return self.dollar
-        return self.cents
+    def __new__(cls):
+        if cls.n_objects < 5:
+            instance = object.__new__(cls)
+            cls.n_objects += 1
+            return instance
+
+    def __str__(self):
+        return "An object of MyClass"
+
+classe = MyClass()
+print(classe)
+# class Puppy:
+#     n_puppies = 0
+#
+#     # define __new__
+#     def __new__(cls):
+#         if cls.n_puppies < 10:
+#             instance = object.__new__(cls)
+#             cls.n_puppies += 1
+#             return instance
+# pup1 = Puppy()
+# pup2 = Puppy()
+# pup3 = Puppy()
+# pup4 = Puppy()
+# pup5 = Puppy()
+# pup6 = Puppy()
+# pup7 = Puppy()
+# pup8 = Puppy()
+# pup9 = Puppy()
+# pup10 = Puppy()
+# pup11 = Puppy()
+# pup12 = Puppy()
+# print(pup11)
 
 
-porco = PiggyBank(0, 155)
-porco.add_money(0, 50)
+
+# class Patient:
+#     def __init__(self, name, last_name, age):
+#         self.name = name
+#         self.last_name =last_name
+#         self.age = age
+#
+#     # create methods here
+#     def __repr__(self):
+#         return f'Object of the class Patient. name: {self.name}, last_name: {self.last_name}, age: {self.age}'
+#
+#     def __str__(self):
+#         return f'{self.name} {self.last_name}. {self.age}'
+#
+# john = Patient("John", "Doe", 50)
+#
+# print(john)
+# class Lightbulb:
+#     def __init__(self):
+#         self.state = "off"
+#
+#     # create method change_state here
+#     def change_state(self):
+#         if self.state == 'off':
+#             self.state = 'on'
+#             print('Turning the light on')
+#         else:
+#             self.state = 'off'
+#             print('Turning the light off')
+#
+# luz = Lightbulb()
+# print(luz.state)
+# print(luz.change_state())
+# print(luz.state)
+# print(luz.change_state())
+# class PiggyBank:
+#     # create __init__ and add_money
+#     def __init__(self, dollars, cents):
+#         self.dollar = dollars
+#         self.cents = cents
+#
+#     def add_money(self, deposit_dollars, deposit_cents):
+#         self.dollar += deposit_dollars
+#         if self.cents + deposit_cents > 99:
+#             self.dollar += (self.cents + deposit_cents) // 100
+#             soma = (self.cents + deposit_cents) % 100
+#             self.cents = soma
+#         else:
+#             self.cents += deposit_cents
+#         return self.dollar
+#         return self.cents
+#
+#
+# porco = PiggyBank(0, 155)
+# porco.add_money(0, 50)
 
 # class House:
 #     def __init__(self, floors):

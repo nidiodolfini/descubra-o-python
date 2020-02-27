@@ -1,13 +1,101 @@
-class Sphere:
-    pi = 3.14
+class PiggyBank:
+    # create __init__ and add_money
+    def __init__(self, dollars, cents):
+        self.dollar = dollars
+        self.cents = cents
 
-    def __init__(self, r):
-        self.r = r
-        self.v = (4 * self.pi * (r**3)) / 3
-        print(f'{self.v:.2f}')
+    def add_money(self, deposit_dollars, deposit_cents):
+        self.dollar += deposit_dollars
+        if self.cents + deposit_cents > 99:
+            self.dollar += (self.cents + deposit_cents) // 100
+            soma = (self.cents + deposit_cents) % 100
+            self.cents = soma
+        else:
+            self.cents += deposit_cents
+        return self.dollar
+        return self.cents
 
 
-bola = Sphere(int(input()))
+porco = PiggyBank(0, 155)
+porco.add_money(0, 50)
+
+# class House:
+#     def __init__(self, floors):
+#         self.floors = floors
+#         self.color = ''
+#
+#     # create the method here
+#     def paint(self, color):
+#         self.color = color
+
+# class Person:
+#     def __init__(self, name):
+#         self.name = name
+#
+#     def greet(self):
+#         print(f"Hello, I am {self.name}!")
+#
+#
+# david = Person(input())
+# david.greet()
+# create the method greet here
+# # our class Ship
+# class Ship:
+#     def __init__(self, name, capacity):
+#         self.name = name
+#         self.capacity = capacity
+#         self.cargo = 0
+#
+#     # the old sail method that you need to rewrite
+#     def sail(self, country):
+#         print(f'The {self.name} has sailed for {country}!')
+#
+#
+# black_pearl = Ship("Black Pearl", 800)
+# black_pearl.sail('Argentina')
+
+
+# class Mountain:
+#     def __init__(self, name, height):
+#         self.name = name
+#         self.height = height
+#
+#     # create convert_height here
+#     def convert_height(self):
+#         self.foot = self.height * 0.3048
+#         return self.foot
+#
+#
+# # create mountains here
+# everest = Mountain('Everest', 8848)
+# aconcagua = Mountain('Aconcagua', 6960.8)
+# print(Mountain.convert_height(everest))
+# print(aconcagua.convert_height())
+
+# class Door:
+#     def open_door(self):
+#         print("Door open")
+#
+#
+# door = Door()
+# Door.open_door()
+
+
+# def fahrenheit_to_celcius(fah):
+#     print((float(fah) - 32) * 5 / 9)
+#
+# fahrenheit_to_celcius(input())
+
+# class Sphere:
+#     pi = 3.14
+#
+#     def __init__(self, r):
+#         self.r = r
+#         self.v = (4 * self.pi * (r**3)) / 3
+#         print(f'{self.v:.2f}')
+#
+#
+# bola = Sphere(int(input()))
 # class Painting:
 #     n_painting = 0
 #     museum_name = ''

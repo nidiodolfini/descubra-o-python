@@ -1,20 +1,114 @@
-class Angel:
-    color = "white"
-    feature = "wings"
-    home = "Heaven"
+class Sphere:
+    pi = 3.14
+
+    def __init__(self, r):
+        self.r = r
+        self.v = (4 * self.pi * (r**3)) / 3
+        print(f'{self.v:.2f}')
 
 
-class Demon:
-    color = "red"
-    feature = "horns"
-    home = "Hell"
+bola = Sphere(int(input()))
+# class Painting:
+#     n_painting = 0
+#     museum_name = ''
+#
+#     def __init__(self, title, artist, year):
+#         self.title = title
+#         self.artist = artist
+#         self.year = year
+#         print(f'"{title}" by {artist} ({year}) hangs in the Louvre.')
+#
+#
+# paint = Painting(input(), input(), input())
+#
+#
 
+# class Fish:
+#     place = "aquarium"
+#     n_fish = 0  # number of fish in the aquarium
+#
+#     def __init__(self, name, kind):
+#         self.name = name
+#         self.kind = kind
+#
+#
+# greg = Fish("Greg", "guppy")
+# # Fish.n_fish = 1
+# greg.n_fish = 1
+# print(Fish.n_fish)
 
-find = input()
-if find in getattr(Angel, 'home') or find in getattr(Angel, 'feature') or find in getattr(Angel, 'color'):
-    print('Angel')
-elif find in getattr(Demon, 'home') or find in getattr(Demon, 'color') or find in getattr(Demon, 'feature'):
-    print('Demon')
+# class City:
+#     all_cities = []
+#
+#     def __init__(self, name, year):
+#         self.name = name
+#         self.year = year
+#
+#
+# ny = City("New York", 1624)
+# ny.all_cities.append("New York")
+#
+# stockholm = City("Stockholm", 1187)
+# stockholm.all_cities = ["Stockholm"]
+#
+# print(stockholm.all_cities)
+# # class Student:
+#
+#     def __init__(self, name, last_name, birth_year):
+#         self.name = name
+#         self.last_name = last_name
+#         self.birth_year = birth_year
+#         self.id = self.name[0] + self.last_name + str(self.birth_year)
+#         print(self.id)
+#
+#
+# # name = input()
+# # last_name = input()
+# # birth_year = int(input())
+# # student = Student(name, last_name, birth_year)
+# student = Student(input(), input(), input())
+# print(student.id)
+
+# class Movie:
+#     def __init__(self, title, director, year):
+#         self.title = title
+#         self.director = director
+#         self.year = year
+#
+#
+# # objects of the class Movie
+# titanic = Movie('Titanic', 'James Cameron', 1997)
+# star_wars = Movie('Star Wars', 'George Lucas', 1977)
+# fight_club = Movie('Fight Club', 'David Fincher', 1999)
+#
+# print(titanic.year)
+
+# class Angel:
+#     color = "white"
+#     feature = "wings"
+#     home = "Heaven"
+#
+#
+# class Demon:
+#     color = "red"
+#     feature = "horns"
+#     home = "Hell"
+#
+# procura = ''
+# find = input().split(' ')
+# for v in find:
+#     if v in ['white', 'wings', 'Heaven', 'red', 'horns', 'Hell']:
+#         # print(v)
+#         procura = v
+#     else:
+#         procura = 'No match'
+# # print(procura)
+# if procura in getattr(Angel, 'home') or procura in getattr(Angel, 'feature') or procura in getattr(Angel, 'color'):
+#     print('Angel')
+# elif procura in getattr(Demon, 'home') or procura in getattr(Demon, 'color') or procura in getattr(Demon, 'feature'):
+#     print('Demon')
+# else:
+#     print('No match')
 # class RockBand:
 #     genre = 'Rock'
 #     n_members = 4

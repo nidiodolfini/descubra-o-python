@@ -1,17 +1,53 @@
-class MyClass:
-    n_objects = 0
+first_name = input()
+last_name = input()
 
-    def __new__(cls):
-        if cls.n_objects < 5:
-            instance = object.__new__(cls)
-            cls.n_objects += 1
-            return instance
+# create full_name here
+b = (first_name, last_name)
+print(b)
+print(type(b))
 
-    def __str__(self):
-        return "An object of MyClass"
 
-classe = MyClass()
-print(classe)
+# a = ()
+# b = tuple()
+# c = ([])
+# # d = (,)
+# e = tuple('')
+# print(type(a))
+# print(type(b))
+# print(type(c))
+# # print(type(d))
+# print(type(e))
+
+# a = [1, 2, 3]
+# b = a
+# # what is the value of b?
+# print(b)
+# a[1] = 10
+# # and here?
+# print(b)
+# b[0] = 20
+# # what about now?
+# print(b)
+# a = [5, 6]
+# # it is the last time, we promise. The value of b?
+#
+# print(a)
+
+
+# class MyClass:
+#     n_objects = 0
+#
+#     def __new__(cls):
+#         if cls.n_objects < 5:
+#             instance = object.__new__(cls)
+#             cls.n_objects += 1
+#             return instance
+#
+#     def __str__(self):
+#         return "An object of MyClass"
+#
+# classe = MyClass()
+# print(classe)
 # class Puppy:
 #     n_puppies = 0
 #

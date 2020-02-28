@@ -1,3 +1,69 @@
+dragons = ['Rudror', 'Targiss', 'Coporth']
+dragons.sort(reverse=True)
+print(dragons)
+dragons.insert(2, -10)
+print(dragons)
+dragons.reverse()
+print(dragons)
+
+
+
+
+# # work with this variable
+# shopping_list = []
+#
+# shopping_list.append("milk")
+# shopping_list.append("olive oil")
+# shopping_list.append("bananas")
+# shopping_list.list.remove("milk")
+# shopping_list.append("brownie")
+# put the rest of list operations below
+
+# my_list = ['Mary', 'Bob', 'Pete', 'Jane']
+# my_list.append(my_list.sort())
+# print(my_list)
+
+# numbers = [2, 2, 4, 1, 1, 3, 5]
+# numbers.sort(reverse=True)
+# numbers.remove(2)
+# numbers.remove(1)
+# numbers.remove(5)
+# numbers.append(5)
+#
+# print(numbers)
+
+# dragons = []
+#
+# dragons = 'teste'
+# # dragons = 'verde'
+# dragons.append('Targiss')
+# print(dragons)
+# print(type(dragons))
+
+
+# def create_url(host='localhost', port=443):
+#     return f'https://{host}:{port}'
+#
+# print(create_url('nidio', 8080))
+
+# def square_odds(a, b):
+#     start = a
+#     if a % 2 == 0:
+#         start += 1
+#     end = b + 1
+#     for odd in range(start, end, 2):
+#         print(odd ** 2)
+#
+#
+# # from 22 to 42
+# square_odds(22, 42)
+#
+# # from 15 to 31
+# square_odds(b=15, a=31)
+#
+# # from 42 to 49
+# square_odds(49, 42)
+
 # first_name = input()
 # last_name = input()
 #
@@ -70,7 +136,6 @@
 # pup11 = Puppy()
 # pup12 = Puppy()
 # print(pup11)
-
 
 
 # class Patient:

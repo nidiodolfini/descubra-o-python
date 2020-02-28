@@ -1,11 +1,24 @@
-dragons = ['Rudror', 'Targiss', 'Coporth']
-dragons.sort(reverse=True)
-print(dragons)
-dragons.insert(2, -10)
-print(dragons)
-dragons.reverse()
-print(dragons)
+import random
 
+r = random.choice(["Voldemort", 'harry', 'numlembro'])
+print(r)
+# import math
+# x = int(input())
+# print(math.expm1(x))
+# # import math
+# # x = int(input())
+#
+# # use factorial() here
+# print(math.factorial(x))
+
+# dragons = ['Rudror', 'Targiss', 'Coporth']
+# dragons.sort(reverse=True)
+# print(dragons)
+# dragons.insert(2, -10)
+# print(dragons)
+# dragons.reverse()
+# print(dragons)
+#
 
 
 

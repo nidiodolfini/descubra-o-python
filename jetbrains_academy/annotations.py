@@ -1,11 +1,11 @@
-first_name = input()
-last_name = input()
-
-# create full_name here
-b = (first_name, last_name)
-print(b)
-print(type(b))
-
+# first_name = input()
+# last_name = input()
+#
+# # create full_name here
+# b = (first_name, last_name)
+# print(b)
+# print(type(b))
+#
 
 # a = ()
 # b = tuple()

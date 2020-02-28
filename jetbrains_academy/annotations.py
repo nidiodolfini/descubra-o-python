@@ -1,7 +1,26 @@
-import random
+set1 = {'oatmeal', 'millet', 'rice', 'semolina', 'buckwheat'}
+set2 = {'oatmeal', 'rice', 'semolina', 'milet', 'buckwheat'}
+print(set1 == set2)
 
-r = random.choice(["Voldemort", 'harry', 'numlembro'])
-print(r)
+# word = input()  # the input word
+#
+# print(len(set(word)))
+# teste = set(word)
+# teste.remove('s')
+# print(teste)
+# import random
+#
+# word = random.choice(['python', 'java', 'kotlin', 'javascript'])
+# hidden_word = '-' * (len(word))
+#
+# print(word , ' ', hidden_word)
+# for i in range(8):
+#     if input() in word:
+#         print('tem')
+# import random
+#
+# r = random.choice(["Voldemort", 'harry', 'numlembro'])
+# print(r)
 # import math
 # x = int(input())
 # print(math.expm1(x))
@@ -19,7 +38,6 @@ print(r)
 # dragons.reverse()
 # print(dragons)
 #
-
 
 
 # # work with this variable

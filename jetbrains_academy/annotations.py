@@ -1,5 +1,16 @@
-numbers = [int(x) for x in input().split()]
-print(sum(numbers)/len(numbers))
+from string import ascii_lowercase
+guess_letter = input(f'Input a letter: ')
+if guess_letter not in ascii_lowercase:
+    print(guess_letter)
+
+# print("  /    Which   \  ")
+# print(" /  came first: \ ")
+# print("|  the  chicken  |")
+# print(" \   or   the   / ")
+# print("  \    egg?    /")
+
+# numbers = [int(x) for x in input().split()]
+# print(sum(numbers)/len(numbers))
 
 # # Write your code here
 # import random

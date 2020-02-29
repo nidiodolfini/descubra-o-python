@@ -1,6 +1,77 @@
-set1 = {'oatmeal', 'millet', 'rice', 'semolina', 'buckwheat'}
-set2 = {'oatmeal', 'rice', 'semolina', 'milet', 'buckwheat'}
-print(set1 == set2)
+numbers = [int(x) for x in input().split()]
+print(sum(numbers)/len(numbers))
+
+# # Write your code here
+# import random
+#
+# word = random.choice(['python', 'java', 'kotlin', 'javascript'])
+# hidden_word = '-' * (len(word))
+# show_word = list(hidden_word)
+# counter = 0
+# teste = ''
+# print('H A N G M A N')
+# print()
+# while counter < 8 and word != ''.join(show_word):
+#     print(''.join(show_word))
+#     guess_letter = input(f'Input a letter: ')
+#     if guess_letter in word:
+#         if guess_letter in show_word:
+#             print('No improvements')
+#             counter += 1
+#         else:
+#             for p in range(len(word)):
+#                 if guess_letter == word[p]:
+#                     show_word[p] = guess_letter
+#             # counter -= 1
+#     else:
+#         print('No such letter in the word')
+#         counter += 1
+#
+# if ''.join(show_word) == word:
+#     print('You guessed the word!')
+#     print('You survived!')
+# else:
+#     print('You are hanged!')
+#
+
+
+# import random
+#
+# # Write your code here
+# word_base = ['python', 'java', 'kotlin', 'javascript']
+# random.seed()
+# random_word = random.choice(word_base)
+# word_map = tuple(random_word)
+# guessing_board = list("-" * len(random_word))
+# letters = set()
+# num_tries = 8
+# tries_counter = 0
+#
+# for letter in random_word:
+#     letters.add(letter)
+#
+# print("H A N G M A N")
+# print("")
+#
+# while tries_counter < num_tries:
+#     tries_counter += 1
+#
+#     print("".join(guessing_board))
+#     input_letter = input("Input a letter: ")
+#     if input_letter in letters:
+#         for i in range(len(guessing_board)):
+#             if word_map[i] == input_letter:
+#                 guessing_board[i] = input_letter
+#     else:
+#         print("No such letter in the word")
+#     print("")
+#
+# print("Thanks for playing!")
+# print("We'll see how well you did in the next stage!")
+
+# set1 = {'oatmeal', 'millet', 'rice', 'semolina', 'buckwheat'}
+# set2 = {'oatmeal', 'rice', 'semolina', 'milet', 'buckwheat'}
+# print(set1 == set2)
 
 # word = input()  # the input word
 #

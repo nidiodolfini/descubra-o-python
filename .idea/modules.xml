@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../JetBrainsAcademy/.idea/JetBrainsAcademy.iml" filepath="$PROJECT_DIR$/../JetBrainsAcademy/.idea/JetBrainsAcademy.iml" />
+      <module fileurl="file://$USER_HOME$/PycharmProjects/JetBrainsAcademy/.idea/JetBrainsAcademy.iml" filepath="$USER_HOME$/PycharmProjects/JetBrainsAcademy/.idea/JetBrainsAcademy.iml" />
       <module fileurl="file://$PROJECT_DIR$/../PythonFundamentos/.idea/PythonFundamentos.iml" filepath="$PROJECT_DIR$/../PythonFundamentos/.idea/PythonFundamentos.iml" />
       <module fileurl="file://$PROJECT_DIR$/../codenation_python/.idea/codenation_python.iml" filepath="$PROJECT_DIR$/../codenation_python/.idea/codenation_python.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/descubra-o-python.iml" filepath="$PROJECT_DIR$/.idea/descubra-o-python.iml" />

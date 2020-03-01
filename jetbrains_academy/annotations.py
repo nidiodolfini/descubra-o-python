@@ -1,7 +1,30 @@
-from string import ascii_lowercase
-guess_letter = input(f'Input a letter: ')
-if guess_letter not in ascii_lowercase:
-    print(guess_letter)
+r3 = 34 % 3
+r5 = 34 % 5
+r7 = 34 % 7
+
+print(r3, r5, r7)
+
+# class RightTriangle:
+#     def __init__(self, hyp, leg_1, leg_2):
+#         self.c = hyp
+#         self.a = leg_1
+#         self.b = leg_2
+#         self.area = 0
+#         # calculate the area here
+#         if (self.c ** 2) == (self.a ** 2) + (self.b ** 2):
+#             self.area = (self.a * self.b) / 2
+#         else:
+#             self.area = 'Not right'
+#         print(self.area)
+#
+#
+# tri = RightTriangle(int(input()), int(input()), int(input()))
+# tri1 = RightTriangle(4, 3, 2)
+
+# from string import ascii_lowercase
+# guess_letter = input(f'Input a letter: ')
+# if guess_letter not in ascii_lowercase:
+#     print(guess_letter)
 
 # print("  /    Which   \  ")
 # print(" /  came first: \ ")

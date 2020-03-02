@@ -1,3 +1,92 @@
+text = [["Glitch", "is", "a", "minor", "problem", "that", "causes", "a", "temporary", "setback"],
+        ["Ephemeral", "lasts", "one", "day", "only"],
+        ["Accolade", "is", "an", "expression", "of", "praise"]]
+lenght_list = int(input())
+sort_list = []
+for texto in text:
+    for word in texto:
+        if len(word) <= lenght_list:
+            sort_list.append(word)
+print(sort_list)
+
+# str_1 = input()
+# str_2 = input()
+# str_3 = input()
+#
+# lista = [str_1, [str_2], [[str_3]]]
+#
+# print(lista)
+
+
+# country_list = [["Moscow", "Cheboksary", "Sochi"], ["Paris", "Lyon", "Nice"],
+#                 ["New York", "Dallas", "San Francisco"]]
+#
+# # long_cities = []
+# # for country in country_list:
+# #     for city in country:
+# #         if len(city) >= 6:
+# #             long_cities.append(city)
+# long_cities = [city for country in country_list for city in country if len(city) >= 6]
+# print(long_cities)
+
+# # original list
+# school = [["Mary", "Jack", "Tiffany"],
+#           ["Brad", "Claire"],
+#           ["Molly", "Andy", "Carla"]]
+#
+# student_list = []
+# # for class_group in school:
+# #     for student in class_group:
+# #         student_list.append(student)
+# student_list = [student for class_group in school for student in class_group]
+# print(student_list)
+
+# M = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+#
+# print(M)
+#
+# print(M[2][0])
+
+# numbers = [1, [2, 3], 4]
+# nested_numbers = numbers[1]
+#
+# print(nested_numbers)  # [2, 3]
+# print(nested_numbers[1])  # 3
+
+# words_a = [word for word in input().split() if word.startswith("a") or word.startswith("A")]
+# print(words_a)
+# seconds = [86400, 3600, 1028397, 8372891, 219983, 865779330, 3276993204380912]
+#
+# teste= 1028397 // 60 // 60 // 24
+#
+# days = [day // 60 // 60 // 24 for day in seconds]
+# print(days)
+# vowels = 'aeiouy'
+# # create your list here
+# new_vowels = input().split(vowels)
+# print(new_vowels)
+
+# words = ["apple", "it", "creek", "pelican", "subsequent", "horse",
+#          "apothecary"]
+# new_word = [len(x) for x in words]
+#
+# print(new_word)
+
+
+# nums = [x*2 for x in range(11) if x % 2 == 1]
+# print(nums)
+# old_list = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+# new_list = [x*2 for x in old_list if x % 2 == 1]
+#
+# print(new_list)
+
+# conditions with functions
+# text = ["functions", "is", "a", "synonym", "of", "occupation"]
+# words_tion = '_'.join([word for word in text if word.endswith("s")])
+# print(words_tion)
+# # result: ["function", "occupation"]
+# words_q = [word for word in input().split() if word.startswith("q")]
+# print(words_q)
 # entrada = input().split(' ')
 # procurado = input()
 #
@@ -8,15 +97,15 @@
 # if procurado not in entrada:
 #     print('not found')
 
-dictionary = ['all', 'an', 'and', 'as', 'closely', 'correct', 'equivocal',
-              'examine', 'indication', 'is', 'means', 'minutely', 'or', 'scrutinize',
-              'sign', 'the', 'to', 'uncertain']
-entrada = input().split(' ')
-
-for i, v in enumerate(entrada):
-    if entrada[i] not in dictionary:
-        print(v)
-
+# dictionary = ['all', 'an', 'and', 'as', 'closely', 'correct', 'equivocal',
+#               'examine', 'indication', 'is', 'means', 'minutely', 'or', 'scrutinize',
+#               'sign', 'the', 'to', 'uncertain']
+# entrada = input().split(' ')
+#
+# for i, v in enumerate(entrada):
+#     if entrada[i] not in dictionary:
+#         print(v)
+#
 
 
 # text = input()

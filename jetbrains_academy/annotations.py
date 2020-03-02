@@ -1,8 +1,56 @@
-r3 = 34 % 3
-r5 = 34 % 5
-r7 = 34 % 7
+# entrada = input().split(' ')
+# procurado = input()
+#
+# for i, v in enumerate(entrada):
+#     if procurado == entrada[i]:
+#         print(i, end=' ')
+#
+# if procurado not in entrada:
+#     print('not found')
 
-print(r3, r5, r7)
+dictionary = ['all', 'an', 'and', 'as', 'closely', 'correct', 'equivocal',
+              'examine', 'indication', 'is', 'means', 'minutely', 'or', 'scrutinize',
+              'sign', 'the', 'to', 'uncertain']
+entrada = input().split(' ')
+
+for i, v in enumerate(entrada):
+    if entrada[i] not in dictionary:
+        print(v)
+
+
+
+# text = input()
+# text1 = text.replace("o", " ")
+# text2 = text.split()
+# text3 = " o".join(text)
+# print(text1)
+# print(text2)
+# print(text3)
+#
+
+# sal = 3.134
+#
+# imp = (sal * 14) /100
+#
+# print(imp)
+
+# class User:
+#     n_active = 0
+#     users = []
+#
+#     # create the class here
+#     def __init__(self, active, user_name):
+#         self.active = active
+#         self.user_name = user_name
+#         if self.active:
+#             self.n_active += 1
+#         self.users.append(self.user_name)
+
+# r3 = 34 % 3
+# r5 = 34 % 5
+# r7 = 34 % 7
+#
+# print(r3, r5, r7)
 
 # class RightTriangle:
 #     def __init__(self, hyp, leg_1, leg_2):

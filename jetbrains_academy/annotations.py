@@ -1,13 +1,28 @@
-text = [["Glitch", "is", "a", "minor", "problem", "that", "causes", "a", "temporary", "setback"],
-        ["Ephemeral", "lasts", "one", "day", "only"],
-        ["Accolade", "is", "an", "expression", "of", "praise"]]
-lenght_list = int(input())
-sort_list = []
-for texto in text:
-    for word in texto:
-        if len(word) <= lenght_list:
-            sort_list.append(word)
-print(sort_list)
+credit_principal = 'Credit principal: 1000'
+final_output = 'The credit has been repaid!'
+first_month = 'Month 1: paid out 250'
+second_month = 'Month 2: paid out 250'
+third_month = 'Month 3: paid out 500'
+
+print(credit_principal)
+print(first_month)
+print(second_month)
+print(third_month)
+print(final_output)
+# pi = 3.141592653589793
+#
+# print(f'{pi:.6}')
+
+# text = [["Glitch", "is", "a", "minor", "problem", "that", "causes", "a", "temporary", "setback"],
+#         ["Ephemeral", "lasts", "one", "day", "only"],
+#         ["Accolade", "is", "an", "expression", "of", "praise"]]
+# lenght_list = int(input())
+# sort_list = []
+# for texto in text:
+#     for word in texto:
+#         if len(word) <= lenght_list:
+#             sort_list.append(word)
+# print(sort_list)
 
 # str_1 = input()
 # str_2 = input()

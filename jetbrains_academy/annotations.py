@@ -1,14 +1,29 @@
-credit_principal = 'Credit principal: 1000'
-final_output = 'The credit has been repaid!'
-first_month = 'Month 1: paid out 250'
-second_month = 'Month 2: paid out 250'
-third_month = 'Month 3: paid out 500'
+import math
+ra = int(input())
+print(round((ra**2) *math.pi ,2))
 
-print(credit_principal)
-print(first_month)
-print(second_month)
-print(third_month)
-print(final_output)
+
+from math import log
+#
+# teste = 10 / (12 * 100)
+# credit = 1000000
+# mon = 15000
+#
+# print(log1p(teste +(mon / (mon - teste * credit))))
+#
+# print(15000 / (15000 - 0.00833) * 1000000)
+
+# credit_principal = 'Credit principal: 1000'
+# final_output = 'The credit has been repaid!'
+# first_month = 'Month 1: paid out 250'
+# second_month = 'Month 2: paid out 250'
+# third_month = 'Month 3: paid out 500'
+#
+# print(credit_principal)
+# print(first_month)
+# print(second_month)
+# print(third_month)
+# print(final_output)
 # pi = 3.141592653589793
 #
 # print(f'{pi:.6}')

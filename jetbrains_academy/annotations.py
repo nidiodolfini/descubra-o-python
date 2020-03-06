@@ -1,3 +1,14 @@
+def triangle_area(sine, a=1.0, b=1.0):
+    """Compute the area of a triangle.
+
+    Non-keyword arguments:
+    sine – a sine of an angle between a and b, float number.
+    Keyword arguments:
+    a – one side of a triangle. Float number, default value 1.0.
+    b – another side of a triangle. Float number, default value 1.0.
+    Returns a float number.
+    """
+
 # x, y = 1, 2
 #
 #

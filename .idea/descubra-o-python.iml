@@ -14,6 +14,7 @@
     <orderEntry type="module" module-name="JetBrainsAcademy" />
     <orderEntry type="module" module-name="JetBrainsAcademy" />
     <orderEntry type="module" module-name="JetBrainsAcademy" />
+    <orderEntry type="module" module-name="JetBrainsAcademy" />
   </component>
   <component name="TestRunnerService">
     <option name="PROJECT_TEST_RUNNER" value="pytest" />

@@ -1,13 +1,46 @@
-def triangle_area(sine, a=1.0, b=1.0):
-    """Compute the area of a triangle.
+text = input()
+number = int(input())
 
-    Non-keyword arguments:
-    sine – a sine of an angle between a and b, float number.
-    Keyword arguments:
-    a – one side of a triangle. Float number, default value 1.0.
-    b – another side of a triangle. Float number, default value 1.0.
-    Returns a float number.
-    """
+print(*text, sep=" "*number)
+
+# line_for_print1 = "Give me another life, and I'll be singing"
+# print1 = 'print(line_for_print1, end='')'  # what you would write as your first print() statement
+#
+# line_for_print2 = "in Caffe` Rafaella. Or simply sitting"
+# print2 = 'print(line_for_print2, end='')'   # your second print() statement
+#
+# line_for_print3 = "there. Or standing there, as furniture in the corner,"
+# print3 = 'print(line_for_print3, end='')' # your third print() statement
+#
+# line_for_print4 = "in case that life is a bit less generous than the former."
+# print4 = 'print(line_for_print4, end='')'  # this one we have written for you
+#
+# # this is how we will check your answer
+# print(print1 + " " + print2 + " " + print3 + " " + print4)
+# # adj = "Good"
+# part_of_day = "morning"
+# comma = ","
+# title = "Ms."
+# surname = "Johnson"
+#
+# # your print() function
+# print(f'{adj} {part_of_day}{comma} {title} {surname}!')
+
+
+# name = ['M', 'A', 'R', 'C', 'O']
+# # modify the next line
+# print(*name, sep='-', end='!')
+
+# def triangle_area(sine, a=1.0, b=1.0):
+#     """Compute the area of a triangle.
+#
+#     Non-keyword arguments:
+#     sine – a sine of an angle between a and b, float number.
+#     Keyword arguments:
+#     a – one side of a triangle. Float number, default value 1.0.
+#     b – another side of a triangle. Float number, default value 1.0.
+#     Returns a float number.
+#     """
 
 # x, y = 1, 2
 #

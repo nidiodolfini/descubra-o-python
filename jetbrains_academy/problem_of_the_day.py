@@ -1,7 +1,21 @@
-print('''"""
-THIS IS A STRING
-"""
-''')
+def f(x):
+    if x <= -2:
+        resultado = 1 - (x + 2) ** 2
+    elif -2 < x <= 2:
+        resultado = - x / 2
+    else:
+        resultado = (x - 2) ** 2 + 1
+    print(resultado)
+
+
+# f(-4.5)
+f(4.5)
+# f(1)
+
+# print('''"""
+# THIS IS A STRING
+# """
+# ''')
 
 
 # import sys

@@ -1,7 +1,25 @@
-text = input()
-number = int(input())
+#
+# long_list = list(range(1000000))
+# file_name = "my_file.txt"
+# opened_file = open(file_name, 'w')
+# for item in long_list:
+#     print(item, file=opened_file, flush=True)  # your print() command to write item to file_name
+# opened_file.close()
+# # print(command)
+# list_to_write = [1, 2, 3, 4, 5]
+# opened_f = open('file_with_list.txt', 'w')
+# opened_f.write(str(list_to_write))
 
-print(*text, sep=" "*number)
+# text_file = 'text_file.txt'                                  # 1
+# print('The specified string to be written',file=open(text_file ,'w'))  # 2
+# # text_file.close()                                            # 3
+# # (item, file=file_name, flush=True)
+# # what to do with the file and the string
+
+# text = input()
+# number = int(input())
+#
+# print(*text, sep=" "*number)
 
 # line_for_print1 = "Give me another life, and I'll be singing"
 # print1 = 'print(line_for_print1, end='')'  # what you would write as your first print() statement

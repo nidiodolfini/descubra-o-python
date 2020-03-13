@@ -1,15 +1,20 @@
-f1 = open('one.txt', 'w')
-f2 = open('two.txt', 'w')
-f3 = open('three.txt', 'w')
+n = int(input())
+k = int(input())
+print(round(k % n))
 
-print('start', 'end', sep=' & ', file=f1)  # [1]
-print('start', file=f2, flush=True)
-f3.write('end')  # [2]
-print('end', file=f2, flush=True)  # [3]
 
-f1.close()  # [4]
-f2.close()  # [5]
-f3.close()  # [6]
+# f1 = open('one.txt', 'w')
+# f2 = open('two.txt', 'w')
+# f3 = open('three.txt', 'w')
+#
+# print('start', 'end', sep=' & ', file=f1)  # [1]
+# print('start', file=f2, flush=True)
+# f3.write('end')  # [2]
+# print('end', file=f2, flush=True)  # [3]
+#
+# f1.close()  # [4]
+# f2.close()  # [5]
+# f3.close()  # [6]
 
 
 # import sys

@@ -1,21 +1,32 @@
-tamanho = 8
+text = input()
+# text = text.lower()
+words = text.split(" ")
+for word in words:
+    if 'www' in word or 'WWW' in word:
+        print(word)
+    elif 'https://' in word or 'HTTPS://' in word:
+        print(word)
+    elif 'http://' in word or 'HTTP://' in word:
+        print(word)
 
-for i in range(tamanho):
-    for j in range(tamanho+1):
-        # print('j', j)
-        # print('t', tamanho-i)
-        if j == tamanho - i:
-            for b in range(tamanho, j-1, -1):
-                print(tamanho - i, end='')
-        print(" ", end='')
-    for j in range(tamanho + 1,0, -1):
-        # print('j', j)
-        # print('t', tamanho-i)
-        if j == tamanho - i:
-            for b in range(j-1,tamanho):
-                print(tamanho - i, end='')
-        # print("", end='')
-    print()
+# tamanho = 8
+#
+# for i in range(tamanho):
+#     for j in range(tamanho+1):
+#         # print('j', j)
+#         # print('t', tamanho-i)
+#         if j == tamanho - i:
+#             for b in range(tamanho, j-1, -1):
+#                 print(tamanho - i, end='')
+#         print(" ", end='')
+#     for j in range(tamanho + 1,0, -1):
+#         # print('j', j)
+#         # print('t', tamanho-i)
+#         if j == tamanho - i:
+#             for b in range(j-1,tamanho):
+#                 print(tamanho - i, end='')
+#         # print("", end='')
+#     print()
 
 #
 # long_list = list(range(1000000))

@@ -1,3 +1,22 @@
+tamanho = 8
+
+for i in range(tamanho):
+    for j in range(tamanho+1):
+        # print('j', j)
+        # print('t', tamanho-i)
+        if j == tamanho - i:
+            for b in range(tamanho, j-1, -1):
+                print(tamanho - i, end='')
+        print(" ", end='')
+    for j in range(tamanho + 1,0, -1):
+        # print('j', j)
+        # print('t', tamanho-i)
+        if j == tamanho - i:
+            for b in range(j-1,tamanho):
+                print(tamanho - i, end='')
+        # print("", end='')
+    print()
+
 #
 # long_list = list(range(1000000))
 # file_name = "my_file.txt"

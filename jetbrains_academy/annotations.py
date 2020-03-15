@@ -1,13 +1,22 @@
-text = input()
-# text = text.lower()
-words = text.split(" ")
-for word in words:
-    if 'www' in word or 'WWW' in word:
-        print(word)
-    elif 'https://' in word or 'HTTPS://' in word:
-        print(word)
-    elif 'http://' in word or 'HTTP://' in word:
-        print(word)
+k = int(input())
+soma = 0
+for i in range(1,k + 1):
+    soma += i
+print((k * (k + 1)) // 2)
+# print(41 / 25)
+# print(41 % 25)
+# print(41 // 25)
+
+# text = input()
+# # text = text.lower()
+# words = text.split(" ")
+# for word in words:
+#     if 'www' in word or 'WWW' in word:
+#         print(word)
+#     elif 'https://' in word or 'HTTPS://' in word:
+#         print(word)
+#     elif 'http://' in word or 'HTTP://' in word:
+#         print(word)
 
 # tamanho = 8
 #

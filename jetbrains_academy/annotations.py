@@ -1,8 +1,8 @@
-k = int(input())
-soma = 0
-for i in range(1,k + 1):
-    soma += i
-print((k * (k + 1)) // 2)
+# k = int(input())
+# soma = 0
+# for i in range(1,k + 1):
+#     soma += i
+# print((k * (k + 1)) // 2)
 # print(41 / 25)
 # print(41 % 25)
 # print(41 // 25)

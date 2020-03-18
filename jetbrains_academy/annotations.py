@@ -1,3 +1,83 @@
+with open('salary.txt', 'r', encoding='utf-8') as in_file, \
+     open('salary_year.txt', 'w', encoding='utf-8') as out_file:
+    for line in in_file:
+        out_file.writelines(str(int(line) * 12))
+        out_file.writelines("\n")
+
+# for i in range(1, 11):
+#     with open(f"file{i}.txt", "w") as f:
+#         f.write(str(i))
+
+
+# f1 = open('name.txt')
+# f2 = open('surname.txt')
+# f3 = open('full_name.txt', 'w')
+# with open('name.txt', 'r') as f1, \
+#     open('surname.txt', 'r') as f2, \
+#     open('full_name.txt', 'w') as f3:
+#     name = f1.read()
+#     surname = f2.read()
+#
+#     full_name = name + ' ' + surname
+#
+#     f3.write(full_name)
+
+
+# with open('test.txt', 'w') as f:
+#     f.write('Tada!')
+
+# f = open('test.txt', 'w')
+# f.write('Tada!')
+# f.close()
+
+# # As luck would have it
+# tickets = [11, 22, 33, 44, 55]
+# winning_tickets = [i >= 44 for i in tickets]
+# tickets_bool = any(winning_tickets)
+# print(tickets_bool)
+
+# numbers = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20,
+#            22, 24, 26, 28, 30, 32, 34, 36, 38, 40]
+# print(numbers[16:3:-1])
+
+# string = "no clouds here to spy on pets"
+# print(string[::5][::-1])
+# new_string = string[::5]
+# print(new_string[::-1])
+
+# computer = ['rock', 'scissors', 'paper']
+# indice = 'scissors'
+# print(computer.index(indice))
+# email = 'python@hyper.skill'
+# print(email[3:-3:3])
+# rating = {}
+# name = "nidio"
+# point = 50
+# rating['name'] = name
+# rating['point'] = point
+# tabela = []
+#
+# tabela.append(rating.copy())
+# print(rating)
+# print(tabela)
+# rating.clear()
+# rating['name'] = 'Jose'
+# rating['point'] = 10
+# tabela.append(rating.copy())
+# for i in range(len(tabela)):
+#     print("i", tabela[i]["name"])
+#     # print("v",v)
+#     if (tabela[i]["name"]) == 'nidio':
+#         tabela[i]["point"] += 50
+# print(rating)
+# print(tabela)
+# file = open('test_file.txt', 'w', encoding='utf-8')
+# for i in range(len(tabela)):
+#     file.write(str(tabela[i]["name"]))
+#     file.write(" ")
+#     file.write(str(tabela[i]["point"]))
+#     file.write("\n")
+# file.close()
 # k = int(input())
 # soma = 0
 # for i in range(1,k + 1):

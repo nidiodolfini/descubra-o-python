@@ -1,15 +1,23 @@
-words = input().split(' ')
-word_with_s =[] #str(words).endswith('s')
-for word in words:
-    if word.endswith('s'):
-       word_with_s.append(word)
-for i in range(len(word_with_s)):
-    if i < len(word_with_s)-1:
-        print(word_with_s[i], end='_')
-    else:
-        print(word_with_s[i], end='')
+# deposit = int(input())
+# years = 0
+# while deposit <= 700000:
+#     years +=1
+#     tax = (deposit * 7.1) / 100
+#     deposit += tax
+# print(years)
 
-print("_".join(w for w in input().split() if w.endswith('s')))
+# words = input().split(' ')
+# word_with_s =[] #str(words).endswith('s')
+# for word in words:
+#     if word.endswith('s'):
+#        word_with_s.append(word)
+# for i in range(len(word_with_s)):
+#     if i < len(word_with_s)-1:
+#         print(word_with_s[i], end='_')
+#     else:
+#         print(word_with_s[i], end='')
+#
+# print("_".join(w for w in input().split() if w.endswith('s')))
 # n = int(input())
 # k = int(input())
 # print(round(k % n))

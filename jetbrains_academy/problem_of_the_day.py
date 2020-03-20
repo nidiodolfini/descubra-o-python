@@ -1,8 +1,18 @@
+<<<<<<< HEAD
 word = input()
 
 for i, v in enumerate(word):
     print(v if i % 2 != 0 else "", end='')
 
+=======
+# deposit = int(input())
+# years = 0
+# while deposit <= 700000:
+#     years +=1
+#     tax = (deposit * 7.1) / 100
+#     deposit += tax
+# print(years)
+>>>>>>> bc7b4dce688c9f84f3240320c6c0c6b155cb9c75
 
 # words = input().split(' ')
 # word_with_s =[] #str(words).endswith('s')

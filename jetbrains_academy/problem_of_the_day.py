@@ -1,15 +1,21 @@
-words = input().split(' ')
-word_with_s =[] #str(words).endswith('s')
-for word in words:
-    if word.endswith('s'):
-       word_with_s.append(word)
-for i in range(len(word_with_s)):
-    if i < len(word_with_s)-1:
-        print(word_with_s[i], end='_')
-    else:
-        print(word_with_s[i], end='')
+word = input()
 
-print("_".join(w for w in input().split() if w.endswith('s')))
+for i, v in enumerate(word):
+    print(v if i % 2 != 0 else "", end='')
+
+
+# words = input().split(' ')
+# word_with_s =[] #str(words).endswith('s')
+# for word in words:
+#     if word.endswith('s'):
+#        word_with_s.append(word)
+# for i in range(len(word_with_s)):
+#     if i < len(word_with_s)-1:
+#         print(word_with_s[i], end='_')
+#     else:
+#         print(word_with_s[i], end='')
+#
+# print("_".join(w for w in input().split() if w.endswith('s')))
 # n = int(input())
 # k = int(input())
 # print(round(k % n))

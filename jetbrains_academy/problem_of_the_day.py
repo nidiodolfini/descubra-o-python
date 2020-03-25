@@ -1,9 +1,60 @@
+class Mountain:
+    def __init__(self, name, height):
+        self.name = name
+        self.height = height
 
-word = input()
+    # create convert_height here
+    def convert_height(self):
+        self.foot = self.height / 0.3048
+        return (f'{self.foot}')
 
-for i, v in enumerate(word):
-    print(v if i % 2 != 0 else "", end='')
 
+# create mountains here
+everest = Mountain('Everest', 8848)
+aconcagua = Mountain('Aconcagua', 6960.8)
+print(everest.convert_height(), aconcagua.convert_height())
+
+
+# import os
+#
+#
+# def arraySum(numbers):
+#     print(sum(numbers))
+#
+#
+#
+# numbers = [1,2,3,4,5]
+# arraySum(numbers)
+
+# def lastLetters(word):
+#     # Write your code here
+#     last = ''
+#     for i in range(len(word)-1, len(word)-3, -1):
+#         last += ''.join(word[i])+ ' '
+#     return last
+#
+# print(lastLetters('APPLE'))
+# def fizzBuzz(n):
+#     # Write your code here
+#     i = 1
+#     while i <= n:
+#         if i % 3 == 0:
+#             print("Fizz", end="")
+#             if i % 5 == 0:
+#                 print("Buzz", end="")
+#         elif i % 5 == 0:
+#             print("Buzz", end="")
+#         else:
+#             print(i, end="")
+#         print()
+#         i += 1
+#
+# fizzBuzz(15)
+# word = input()
+#
+# for i, v in enumerate(word):
+#     print(v if i % 2 != 0 else "", end='')
+#
 
 # deposit = int(input())
 # years = 0

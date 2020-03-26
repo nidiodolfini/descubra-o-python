@@ -1,18 +1,25 @@
-class Mountain:
-    def __init__(self, name, height):
-        self.name = name
-        self.height = height
+email = 'nidiosdolfini@gmail.com'
+# slice_email = email.split('@')
+# print(slice_email[0])
+index = email.index('@')
+print(index)
+print(email[:index])
 
-    # create convert_height here
-    def convert_height(self):
-        self.foot = self.height / 0.3048
-        return (f'{self.foot}')
-
-
-# create mountains here
-everest = Mountain('Everest', 8848)
-aconcagua = Mountain('Aconcagua', 6960.8)
-print(everest.convert_height(), aconcagua.convert_height())
+# class Mountain:
+#     def __init__(self, name, height):
+#         self.name = name
+#         self.height = height
+#
+#     # create convert_height here
+#     def convert_height(self):
+#         self.foot = self.height / 0.3048
+#         return (f'{self.foot}')
+#
+#
+# # create mountains here
+# everest = Mountain('Everest', 8848)
+# aconcagua = Mountain('Aconcagua', 6960.8)
+# print(everest.convert_height(), aconcagua.convert_height())
 
 
 # import os

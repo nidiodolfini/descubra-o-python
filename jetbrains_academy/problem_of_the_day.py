@@ -1,9 +1,26 @@
-email = 'nidiosdolfini@gmail.com'
-# slice_email = email.split('@')
-# print(slice_email[0])
-index = email.index('@')
-print(index)
-print(email[:index])
+class RightTriangle:
+    def __init__(self, hyp, leg_1, leg_2):
+        self.c = hyp
+        self.a = leg_1
+        self.b = leg_2
+        self.area = self.a * self.b * 0.5
+        if (self.c**2) == ((self.a**2) + (self.b**2)):
+            print(self.area)
+        else:
+            print('Not right')
+
+# print(5**2, 3**2, 4**2)
+# area = ((3) * (4))* 0.5
+# print(area)
+c, a, b = input().split(' ')
+RightTriangle(int(c), int(a), int(b))
+
+# email = 'nidiosdolfini@gmail.com'
+# # slice_email = email.split('@')
+# # print(slice_email[0])
+# index = email.index('@')
+# print(index)
+# print(email[:index])
 
 # class Mountain:
 #     def __init__(self, name, height):

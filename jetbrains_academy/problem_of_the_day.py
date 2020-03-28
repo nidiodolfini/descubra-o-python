@@ -1,19 +1,31 @@
-class RightTriangle:
-    def __init__(self, hyp, leg_1, leg_2):
-        self.c = hyp
-        self.a = leg_1
-        self.b = leg_2
-        self.area = self.a * self.b * 0.5
-        if (self.c**2) == ((self.a**2) + (self.b**2)):
-            print(self.area)
-        else:
-            print('Not right')
+kind_food = input()
+if kind_food == 'pizza':
+    print('Margarita, Four Seasons, Neapoletana, Vegetarian, Spicy')
+elif kind_food == 'salad':
+    print('Caesar salad, Green salad, Tuna salad, Fruit salad')
+elif kind_food == 'soup':
+    print('Chicken soup, Ramen, Tomato soup, Mushroom cream soup')
+else:
+    print("Sorry, we don't have it in the menu")
+
+
+
+# class RightTriangle:
+#     def __init__(self, hyp, leg_1, leg_2):
+#         self.c = hyp
+#         self.a = leg_1
+#         self.b = leg_2
+#         self.area = self.a * self.b * 0.5
+#         if (self.c**2) == ((self.a**2) + (self.b**2)):
+#             print(self.area)
+#         else:
+#             print('Not right')
 
 # print(5**2, 3**2, 4**2)
 # area = ((3) * (4))* 0.5
 # print(area)
-c, a, b = input().split(' ')
-RightTriangle(int(c), int(a), int(b))
+# c, a, b = input().split(' ')
+# RightTriangle(int(c), int(a), int(b))
 
 # email = 'nidiosdolfini@gmail.com'
 # # slice_email = email.split('@')

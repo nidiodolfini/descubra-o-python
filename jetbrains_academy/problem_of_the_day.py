@@ -1,12 +1,20 @@
-kind_food = input()
-if kind_food == 'pizza':
-    print('Margarita, Four Seasons, Neapoletana, Vegetarian, Spicy')
-elif kind_food == 'salad':
-    print('Caesar salad, Green salad, Tuna salad, Fruit salad')
-elif kind_food == 'soup':
-    print('Chicken soup, Ramen, Tomato soup, Mushroom cream soup')
-else:
-    print("Sorry, we don't have it in the menu")
+n = int(input())
+my_stack = []
+for i in range(n):
+    my_stack.append(input())
+
+for i in range(len(my_stack), 0,-1):
+    print(my_stack[i-1])
+
+# kind_food = input()
+# if kind_food == 'pizza':
+#     print('Margarita, Four Seasons, Neapoletana, Vegetarian, Spicy')
+# elif kind_food == 'salad':
+#     print('Caesar salad, Green salad, Tuna salad, Fruit salad')
+# elif kind_food == 'soup':
+#     print('Chicken soup, Ramen, Tomato soup, Mushroom cream soup')
+# else:
+#     print("Sorry, we don't have it in the menu")
 
 
 

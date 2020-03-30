@@ -1,10 +1,30 @@
-n = int(input())
-my_stack = []
-for i in range(n):
-    my_stack.append(input())
+from math import sqrt
 
-for i in range(len(my_stack), 0,-1):
-    print(my_stack[i-1])
+number = int(input())
+zero = number
+numbers = []
+numbers.append(number)
+while zero != 0:
+    number = int(input())
+    if number == 0 and len(numbers) == 0:
+        print(0)
+        break
+    numbers.append(number)
+    zero += number
+soma = 0
+
+for i in numbers:
+    # print(i)
+    soma += i**2
+print(soma)
+# print(zero)
+# n = int(input())
+# my_stack = []
+# for i in range(n):
+#     my_stack.append(input())
+#
+# for i in range(len(my_stack), 0,-1):
+#     print(my_stack[i-1])
 
 # kind_food = input()
 # if kind_food == 'pizza':

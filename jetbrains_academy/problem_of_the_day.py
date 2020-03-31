@@ -1,22 +1,67 @@
-from math import sqrt
+name = "John"
 
-number = int(input())
-zero = number
-numbers = []
-numbers.append(number)
-while zero != 0:
-    number = int(input())
-    if number == 0 and len(numbers) == 0:
-        print(0)
-        break
-    numbers.append(number)
-    zero += number
-soma = 0
 
-for i in numbers:
-    # print(i)
-    soma += i**2
-print(soma)
+def change_name(new_name):
+    global name
+    name = new_name
+
+
+change_name("Mary")
+print(name)
+
+
+
+# text = input()
+# counter = 0
+# error = False
+# for i in text:
+#     if text[0] == ')':
+#         error = True
+#     elif i == '(':
+#         counter += 1
+#     elif i == ')':
+#         counter -= 1
+# if error:
+#     print('ERROR')
+# elif counter == 0:
+#     print('OK')
+# else:
+#     print('ERROR')
+
+# books = []
+# count = int(input())
+# read = []
+#
+# for _ in range(count):
+#     action = input().split(' ',1)
+#     if action[0] == 'BUY':
+#
+#         books.append(action[1])
+#     elif action[0] == 'READ':
+#         read.append(books[-1])
+#
+# for i in read:
+#     print(i)
+
+# from math import sqrt
+#
+# number = int(input())
+# zero = number
+# numbers = []
+# numbers.append(number)
+# while zero != 0:
+#     number = int(input())
+#     if number == 0 and len(numbers) == 0:
+#         print(0)
+#         break
+#     numbers.append(number)
+#     zero += number
+# soma = 0
+#
+# for i in numbers:
+#     # print(i)
+#     soma += i**2
+# print(soma)
 # print(zero)
 # n = int(input())
 # my_stack = []
@@ -35,7 +80,6 @@ print(soma)
 #     print('Chicken soup, Ramen, Tomato soup, Mushroom cream soup')
 # else:
 #     print("Sorry, we don't have it in the menu")
-
 
 
 # class RightTriangle:

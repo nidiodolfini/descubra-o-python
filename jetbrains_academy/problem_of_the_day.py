@@ -1,13 +1,17 @@
-name = "John"
+print(2**2)
+print(2*0.5)
 
 
-def change_name(new_name):
-    global name
-    name = new_name
-
-
-change_name("Mary")
-print(name)
+# name = "John"
+#
+#
+# def change_name(new_name):
+#     global name
+#     name = new_name
+#
+#
+# change_name("Mary")
+# print(name)
 
 
 

@@ -1,5 +1,5 @@
-print(2**2)
-print(2*0.5)
+a, b = input().split(' ')
+print(int(a) + int(b))
 
 
 # name = "John"

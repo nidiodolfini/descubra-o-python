@@ -1,5 +1,23 @@
-a, b = input().split(' ')
-print(int(a) + int(b))
+# numbers = [1234, 5678, 90]
+# # save this list in `file_with_list.txt`
+# file = open('file_with_list.txt','w')
+# file.write(str(numbers))
+#
+# # for i in numbers:
+# #     file.write(str(i))
+# #     file.write('\n')
+# #
+# file.close()
+# #
+
+
+# list_of_strings = ["36", "45", "99"]
+# list_of_int = []
+# for i in list_of_strings:
+#     list_of_int.append(int(i)+1)
+# print(list_of_int)
+# a, b = input().split(' ')
+# print(int(a) + int(b))
 
 
 # name = "John"

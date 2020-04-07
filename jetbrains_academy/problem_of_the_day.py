@@ -1,10 +1,15 @@
-guest = []
-dot = ''
-while dot != '.':
-    dot = input()
-    if dot == '.':
-        break
-    guest.append(dot)
+import math
 
-print(guest)
-print(len(guest))
+
+class Hexagon:
+    def __init__(self, side_length):
+        self.side_length = side_length
+
+    # create get_area here
+    def get_area(self):
+        area = 3 * math.sqrt(3) * (self.side_length ** 2) / 2
+        return f'{area:.3f}'
+
+
+hexa = Hexagon(5.4)
+print(hexa.get_area())

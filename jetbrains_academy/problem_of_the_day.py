@@ -1,15 +1,25 @@
-import math
+# cafes = []
+# while True:
+#     cafe = input().split(" ")
+#     if cafe[0] == 'MEOW':
+#         cafeteira = cafes[0][0]
+#         maior = int(cafes[0][1])
+#         for i in cafes:
+#             if int(i[1]) > maior:
+#                 cafeteira = i[0]
+#         print(cafeteira)
+#         break
+#     cafes.append(cafe.copy())
+x = 1
+y = 2
+def swap():
+    global x
+    global y
+    temp = x
+    x = y
+    y = temp
+    print(x,y)
+print(x,y)
+swap()
+print(x,y)
 
-
-class Hexagon:
-    def __init__(self, side_length):
-        self.side_length = side_length
-
-    # create get_area here
-    def get_area(self):
-        area = 3 * math.sqrt(3) * (self.side_length ** 2) / 2
-        return f'{area:.3f}'
-
-
-hexa = Hexagon(5.4)
-print(hexa.get_area())

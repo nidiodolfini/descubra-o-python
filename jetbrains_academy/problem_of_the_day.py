@@ -1,7 +1,8 @@
-import random
+IS_RELEASE_SERVER = input()
+bool(IS_RELEASE_SERVER)
+if IS_RELEASE_SERVER == 'true':
+    DEBUG = False
+else:
+    DEBUG = True
 
-
-random.seed(3)
-# call the function here
-beta_distribution = random.betavariate(0.9, 0.1)
-print(beta_distribution)
+print(DEBUG)
